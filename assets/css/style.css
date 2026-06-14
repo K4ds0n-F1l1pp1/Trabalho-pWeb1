@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Federo&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Syncopate:wght@400;700&family=Exo+2:wght@300;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores inspiradas em Porsches. */
+  --albertblau: #0F2144;
+  --modegrau: #918E85;
+  --arenarot: #6B1D23;
+  --eichengruen: #2B3D2F;
+
+  --begelight: #F8F9FA;
+  --cinza: #212529;
+  --silver: #C0C0C0;
+  --white: #FFFFFF;
+  --preto: #000000;
+  --marmore: #E0D9D1;
+
+    /*Ícones do Site: */
+  --icon-car: "\f1b9";
+  --icon-phone: "\f095";
+  --icon-envelope: "\f0e0";
+  --icon-map: "\f279";
+
+     /*Fontes do Site: */
+  --font-lato: 'Lato', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+
+  --font-federo: 'Federo', sans-serif;
+  --font-lubrifont: 'WDXL Lubrifont TC', sans-serif;
+
+  --font-porsche-modern: 'Michroma', sans-serif;
+    
+  --font-porsche-speed: 'Syncopate', sans-serif;
+  --font-porsche-info: 'Exo 2', sans-serif;
+}
+
+body {
+    background-color: var(--begelight);
+    font-family: var(--font-porsche-info);
+    color: var(--cinza);
+}
+
+.font-porsche-header {
+    font-family: var(--font-porsche-speed);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.bg-porsche-dark {
+    background-color: var(--albertblau) !important;
+}
+
+.btn-porsche {
+    background-color: var(--arenarot);
+    color: var(--white);
+    font-family: var(--font-porsche-modern);
+    font-size: 0.85rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-porsche:hover {
+    background-color: #52151a;
+    color: var(--marmore);
+}
+
+.card-login {
+    border-top: 5px solid var(--arenarot);
+    background-color: var(--white);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
