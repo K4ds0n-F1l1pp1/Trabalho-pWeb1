@@ -1,5 +1,5 @@
 <?php
-/*
+
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -9,13 +9,6 @@ if (!isset($_SESSION['usuario_id']) && $pagina_atual != 'login.php' && $pagina_a
     $protocolo = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
     header("Location: " . $protocolo . "://" . $_SERVER['HTTP_HOST'] . "//Trabalho-pWeb1/site/login.php");
     exit();
-}
-*/
-
-if (!isset($_SESSION['usuario_id'])) {
-    $_SESSION['usuario_id'] = 1;
-    $_SESSION['usuario_nome'] = "Modo Desenvolvedor";
-    $_SESSION['usuario_tipo'] = "Administrador";
 }
 
 $base_url = "http://" . $_SERVER['HTTP_HOST'] . "/Trabalho-pWeb1/site/";
@@ -51,16 +44,16 @@ $base_url = "http://" . $_SERVER['HTTP_HOST'] . "/Trabalho-pWeb1/site/";
                     <a class="nav-link" href="<?php echo $base_url; ?>index.php"><i class="fa-solid fa-chart-pie"></i> Painel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $base_url; ?>site/admin/loja/LojaList.php"><i class="fa-solid fa-shop"></i> Lojas</a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>/admin/loja/filialList.php"><i class="fa-solid fa-shop"></i> Lojas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $base_url; ?>site/admin/veiculo/VeiculoList.php"><i class="fa-solid fa-gauge"></i> Estoque</a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>/admin/veiculo/veiculoList.php"><i class="fa-solid fa-gauge"></i> Estoque</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $base_url; ?>site/admin/cliente/ClienteList.php"><i class="fa-solid fa-users"></i> Clientes</a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>/admin/cliente/clienteList.php"><i class="fa-solid fa-users"></i> Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $base_url; ?>site/admin/venda/VendaList.php"><i class="fa-solid fa-handshake"></i> Vendas</a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>/admin/venda/vendaList.php"><i class="fa-solid fa-handshake"></i> Vendas</a>
                 </li>
             </ul>
             <div class="d-flex align-items-center text-light">
