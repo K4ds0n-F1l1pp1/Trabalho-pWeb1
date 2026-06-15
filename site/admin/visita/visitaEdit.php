@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-$clientes = $db->query("SELECT id, nome_complete FROM cliente ORDER BY nome_complete ASC")->fetchAll(PDO::FETCH_ASSOC);
+$clientes = $db->query("SELECT id, nome_completo FROM cliente ORDER BY nome_completo ASC")->fetchAll(PDO::FETCH_ASSOC);
 $carros = $db->query("SELECT id, marca, modelo FROM veiculo ORDER BY modelo ASC")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
@@ -73,7 +73,7 @@ $carros = $db->query("SELECT id, marca, modelo FROM veiculo ORDER BY modelo ASC"
                         <select class="form-select" name="cliente_id" required>
                             <?php foreach ($clientes as $c): ?>
                                 <option value="<?php echo $c['id']; ?>" <?php echo $visita['cliente_id'] == $c['id'] ? 'selected' : ''; ?>>
-                                    <?php echo htmlspecialchars($c['nome_complete']); ?>
+                                    <?php echo htmlspecialchars($c['nome_completo']); ?>
                                 </option>
                             <?php endforeach; ?>
                         </select>
