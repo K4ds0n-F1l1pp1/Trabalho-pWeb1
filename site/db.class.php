@@ -233,6 +233,8 @@ class DB {
         return $stmt->execute();
     }
 
+    // Inicio Veículos X Vendas bem legais:
+
     public function listarVeiculosDisponiveis($termo = '', $campo_filtro = 'modelo') {
         $db = $this->connect();
 
