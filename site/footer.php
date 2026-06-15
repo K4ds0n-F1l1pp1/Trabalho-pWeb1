@@ -1,6 +1,6 @@
 </div> <footer class="footer mt-auto py-3 bg-dark text-light text-center border-top border-secondary">
     <div class="container">
-        <span class="small text-light">&copy; <?php echo date('Y'); ?> CarVows - Sistema de Gestão. Desenvolvido para a disciplina de Programação Web 1.</span>
+        <span class="small text-light">&copy; <?php echo date('Y'); ?> CarVows - Quase um Sistema de Gestão. Desenvolvido para a disciplina de Programação Web 1.</span>
     </div>
 </footer>
 
